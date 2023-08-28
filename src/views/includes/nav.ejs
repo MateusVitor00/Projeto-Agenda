@@ -1,0 +1,14 @@
+<nav class="navbar-dark bg-dark">
+<div class="d-flex mb-3 navbar navbar-expand-lg ">
+      <div class="me-auto p-2 "><a href="/" class="link-offset-2 link-underline link-underline-opacity-0 link-light p-2 flex-grow-1" >Agenda</a></div>
+      
+      <div class="p-2" ><a href="/contato/index" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Cadastrar Contato</a></div>
+      <% if(user) { %>
+      <div class="p-2"><a href="/login/logout" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Sair</a></div>
+      <% } else { %>
+      <div class="p-2"><a href="/login/index" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Entrar</a></div>
+      <% } %>
+</div>
+</nav>
+
+
